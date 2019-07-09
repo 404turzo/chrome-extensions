@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Turzone Bangla",
+    "description": "Implementing Avro",
+    "version": "1.0.0",
+    "icons": {
+        "192": "active.png"
+    },
+    "browser_action": {
+        "default_icon": "active.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "jquery-3.4.1.min.js",
+                "avro-v1.1.4.min.js",
+                "popup.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
